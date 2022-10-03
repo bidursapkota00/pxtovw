@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Button, Form, InputNumber } from 'antd';
 import { NextSeo } from 'next-seo';
 
@@ -39,6 +39,8 @@ function Home() {
     setVw(0);
     tot.focus();
   };
+
+  useEffect(() => tot.focus(), []);
 
   return (
     <div style={{ marginTop: '30px' }}>
