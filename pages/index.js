@@ -133,11 +133,11 @@ function Home(props) {
 
         <p style={{ marginLeft: '35px', fontSize: '18px', color: 'purple' }}>
           <span>Required ViewWidth:&ensp;</span>
-          <span style={{ color: '#111' }}>{vw.toFixed()}vw</span>
+          <span style={{ color: '#111' }}>{vw.toFixed(3)}vw</span>
           &emsp;&emsp;
           <Button
             onClick={() => {
-              navigator.clipboard.writeText(vw.toFixed() + 'vw');
+              navigator.clipboard.writeText(vw.toFixed(3) + 'vw');
             }}
             danger
           >
