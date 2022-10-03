@@ -37,7 +37,7 @@ function Home() {
   const onReset = () => {
     form.resetFields();
     setVw(0);
-    setTimeout(() => tot.focus(), 500);
+    setTimeout(() => tot.focus(), 1000);
   };
 
   useEffect(() => tot.focus(), []);
