@@ -13,17 +13,22 @@ const reqViewport = (
 );
 
 const validateMessages = {
-  required: '${label} is required!',
+  required: '${name} is required!',
+  types: {
+    email: '${name} is not a valid email!',
+    number: '${name} is not a valid number!',
+  },
   number: {
-    range: '${label} must be greater or equal to ${min}',
+    range: '${name} must be greater or equal to ${min}',
   },
 };
 
-function Home(props) {
+function Home() {
   const [form] = Form.useForm();
 
   const [vw, setVw] = useState(0);
   let { req } = useRef(null);
+  let { tot } = useRef(null);
 
   const onFinish = (values) => {
     console.log(values);
@@ -32,6 +37,7 @@ function Home(props) {
   const onReset = () => {
     form.resetFields();
     setVw(0);
+    tot.focus();
   };
 
   return (
@@ -80,6 +86,9 @@ function Home(props) {
               type="number"
               onPressEnter={() => {
                 req.focus();
+              }}
+              ref={(ip) => {
+                tot = ip;
               }}
             />
           </Form.Item>
