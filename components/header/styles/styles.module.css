@@ -1,0 +1,22 @@
+.header {
+    height: 64px;
+    flex: 1;
+    background: #9a9aaf;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerLinks {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.headerLinks li a{
+    color: #4d4d4d;
+}
+

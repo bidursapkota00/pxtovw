@@ -1,0 +1,13 @@
+.dashboardContainer {
+    flex: 1;
+    min-height: 100vh;
+    background: antiquewhite;
+}
+
+.dashboardContainerTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    color: #4d4d4d;
+}

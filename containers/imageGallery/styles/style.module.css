@@ -1,0 +1,12 @@
+.imageGallery {
+    flex: 1;
+    min-height: 100vh;
+    background: antiquewhite;
+}
+
+.imageContainer {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}

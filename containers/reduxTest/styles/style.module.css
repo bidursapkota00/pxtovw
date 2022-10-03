@@ -1,0 +1,11 @@
+.reduxTestContainer {
+    flex: 1;
+    min-height: 100vh;
+    background: antiquewhite;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
