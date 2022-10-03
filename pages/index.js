@@ -27,7 +27,7 @@ function Home(props) {
 
   const onFinish = (values) => {
     console.log(values);
-    setVw(values.ViewportWidth * values.RequiredWidth);
+    setVw((values.RequiredWidth / values.ViewportWidth) * 100);
   };
   const onReset = () => {
     form.resetFields();
@@ -62,7 +62,7 @@ function Home(props) {
               {
                 type: 'number',
                 required: true,
-                min: 0,
+                min: 0.1,
               },
             ]}
             labelCol={{
